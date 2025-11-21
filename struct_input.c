@@ -1,4 +1,4 @@
-//structure for name of book
+//structure for name of book,auther,year
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -25,6 +25,12 @@ void main()
 
         printf("enter the year of book :");
         scanf("%d",&b[i].year );
+    }
+    for(int i=0;i<n;i++)
+    {
+        printf("%s \n",b[i].name);
+        printf("%s \n",b[i].author);
+        printf("%d\n", b[i].year);
     }
 
 }
